@@ -6,7 +6,15 @@
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
 <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b65fb33b13e8f69fe4e773a0691cb40e";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
     var useragent = navigator.userAgent;
     if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
         window.location.href = "http://weixin110.qq.com"
